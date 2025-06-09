@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DevCursos - Cadastro</title>
+  <link rel="stylesheet" href="../assets/style.css"/>
+  <link rel="stylesheet" href="../assets/style2.css"/>
+  <link rel="shortcut icon" href="../assets/img/logo.png" type="image/x-icon"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h2>
+        <a href="index.html">
+          <i class="fas fa-code"></i> Dev<span>Cursos</span>
+        </a>
+      </h2>
+    </div>
+    <div class="menu-links">
+      <li><a href="cursos.html">Cursos</a></li>
+      <a href="#">Sobre</a>
+      <a href="#">Contato</a>
+    </div>
+    <a href="login.html" class="btn"><i class="fas fa-sign-in-alt"></i>Entrar</a>
+  </header>
+
+  <main class="login-container">
+    <h2>👤➕ Criar nova conta</h2>
+    <form>
+      <input type="text" placeholder="Informe seu nome completo" required />
+      <input type="email" placeholder="Informe seu e-mail" required />
+      <input type="password" placeholder="Crie uma senha" required />
+      <input type="password" placeholder="Confirme a senha" required />
+
+      <div class="form-group">
+  <label for="tipoVisitante" class="form-label">Tipo de Curso</label>
+  <select id="tipoVisitante" name="tipoCurso" class="form-select" required>
+    <option value="">Selecione uma opção</option>
+    <option value="integrado">Integrado</option>
+    <option value="concomitante">Concomitante</option>
+    <option value="profissionalizante">Profissionalizante</option>
+  </select>
+</div>
+
+<div class="form-group">
+  <label for="areaInteresse" class="form-label">Área de Interesse</label>
+  <select id="areaInteresse" name="areaInteresse" class="form-select" required>
+    <option value="">Selecione uma área</option>
+    <option value="web">Desenvolvimento Web</option>
+    <option value="bd">Banco de Dados</option>
+    <option value="ia">Inteligência Artificial</option>
+    <option value="rede">Rede de Computadores</option>
+    <option value="seguranca">Segurança da Informação</option>
+    <option value="nuvem">Computação em Nuvem</option>
+  </select>
+</div>
+      <div class="upload" style="margin-top: 20px;">
+      </div>
+
+      <button type="submit"><i class="fa fa-user-plus"></i> Criar conta</button>
+    </form>
+
+    <a href="login.html" class="back-link">← Já tem uma conta? Entrar</a>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 DevCursos. Todos os direitos reservados.</p>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-linkedin"></i></a>
+      <a href="#"><i class="fab fa-github"></i></a>
+    </div>
+  </footer>
+</body>
+</html>
